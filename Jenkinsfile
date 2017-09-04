@@ -1,17 +1,17 @@
 pipeline {
     agent any
 
-    stages {
+    //stages {
         stage ('Compile Stage') {
 
             steps {
                 withMaven(maven : 'Apache-maven') {
-                     bat 'mvn clean compile'
+                     bat 'mvn clean install'
                 }
             }
         }
 
-        stage ('Testing Stage') {
+       / * stage ('Testing Stage') {
 
             steps {
                 withMaven(maven : 'Apache-maven') {
@@ -20,13 +20,13 @@ pipeline {
             }
         }
 
-    
+
         stage ('Deployment2 Stage') {
             steps {
                 withMaven(maven : 'Apache-maven ') {
                     bat 'mvn deploy'
                 }
             }
-        }
-    }
+        } */
+    //}
 }
