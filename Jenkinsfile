@@ -16,6 +16,12 @@ pipeline {
                                 }
                             }
                         }
-
+                 stage ('Deployment Stage') {
+                                             steps {
+                                                 withMaven(maven : 'apache-maven ') {
+                                                     bat 'mvn deploy'
+                                                 }
+                                             }
+                                         }
 			}
 		}
