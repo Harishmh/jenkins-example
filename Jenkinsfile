@@ -13,7 +13,7 @@ pipeline {
 
         stage ('Testing Stage') {
 
-            steps {sh
+            steps {
                 withMaven(maven : 'Apache-maven') {
                     bat 'mvn test'
                 }
