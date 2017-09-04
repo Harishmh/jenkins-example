@@ -21,7 +21,7 @@ pipeline {
         }
 
 
-        stage ('Deployment1 Stage') {
+        stage ('Deployment2 Stage') {
             steps {
                 withMaven(maven : 'Apache-maven ') {
                     bat 'mvn deploy'
