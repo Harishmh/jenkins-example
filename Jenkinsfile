@@ -15,7 +15,7 @@ pipeline {
 
             steps {sh
                 withMaven(maven : 'Apache-maven') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
