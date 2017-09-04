@@ -20,7 +20,7 @@ pipeline {
             }
         }
 
-
+    
         stage ('Deployment2 Stage') {
             steps {
                 withMaven(maven : 'Apache-maven ') {
