@@ -18,7 +18,7 @@ pipeline {
                                                 sh 'make check || true'
                                                 junit '**/target/*.xml'
                                             }
-                            }
+
                         }
                  stage ('Deployment2 Stage') {
                                              steps {
