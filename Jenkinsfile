@@ -10,10 +10,7 @@ pipeline {
 				}
 				stage ('Testing Stage') {
 
-                            steps {
-                                withMaven(maven : 'apache-maven') {
-                                    bat 'mvn test'
-                                }
+
                                 steps {
                                                 /* `make check` returns non-zero on test failures,
                                                 * using `true` to allow the Pipeline to continue nonetheless
