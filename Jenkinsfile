@@ -15,7 +15,7 @@ pipeline {
                                                 /* `make check` returns non-zero on test failures,
                                                 * using `true` to allow the Pipeline to continue nonetheless
                                                 */
-                                                bat 'make check || true'
+                                                cmd 'make check || true'
                                                 junit '**/target/*.xml'
                                             }
 
