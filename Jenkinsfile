@@ -10,14 +10,12 @@ pipeline {
 				}
 				stage ('Testing Stage') {
 
-
-                                steps {
-                                                /* `make check` returns non-zero on test failures,
-                                                * using `true` to allow the Pipeline to continue nonetheless
-                                                */
-                                                cmd 'make check || true'
-                                                junit '**/target/*.xml'
-                                            }
+            steps {
+                withMaven(maven : 'maven_3_5_0') {
+                    sh 'mvn test'
+                }
+            }
+        }
 
                         }
                  stage ('Deployment2 Stage') {
