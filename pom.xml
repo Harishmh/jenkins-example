@@ -57,8 +57,8 @@
 
     <repositories>
         <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
+            <id>>nexus-snapshots</id>
+            <url>http://localhost:8081/nexus/content/repositories/snapshot/</url>
         </repository>
     </repositories>
 
