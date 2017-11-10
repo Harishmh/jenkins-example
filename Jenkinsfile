@@ -25,8 +25,8 @@ pipeline {
           //  steps {
             //    withMaven(maven : 'MAVEN_HOME') {
             //        bat 'mvn deploy'
-                }
-            }
-        }
+                //}
+           // }
+        //}
     }
 }
