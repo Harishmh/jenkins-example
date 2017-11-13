@@ -21,12 +21,13 @@ pipeline {
         }
 
 
-        //stage ('Deployment Stage') {
+        stage ('Deployment Stage') {
           //  steps {
             //    withMaven(maven : 'MAVEN_HOME') {
             //        bat 'mvn deploy'
                 //}
+            bat xcopy C:\Program Files (x86)\Jenkins1\workspace\jenkins_pipeline\target\ C:\Dev_Harish\ \s
            // }
-        //}
+        }
     }
 }
